@@ -1,0 +1,11 @@
+.page-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    background-color: blue  ;
+}
+
+.page-footer {
+    display: flex;
+}
