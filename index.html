@@ -7,29 +7,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Personal site">
     <title>A Pixel Ocean</title>
-    <link href="./css/index.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 </head>
 
-<body>
-    <header class="page-header">
-        <div>
-            The header.
-        </div>
-        <div>
-            header type stuff
-        </div>
+<body class="min-h-screen flex flex-col">
+    <header class="page-header flex flex-row px-8 h-16 items-center justify-center text-center">
+        <h1 class="justify-center items-center text-center">A Pixel Ocean</h1>
     </header>
-    <main>
-        <div>
-            <p>Website in progress. With pure css/html/js.</p>
+    <main class="flex-1 my-8">
+        <div class="flex flex-row w-screen flex-1">
+            <div class="flex flex-row w-64">
+                <div class="flex-1"></div>
+                <nav class="pr-4 justify-right items-right">
+                    <ul class="flex flex-col w-16 space-y-4 justify-right items-right text-right">
+                        <li class="text-right"><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Services</a></li>
+                        <li><a href="/">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="flex-1 flex flex-col page-content ">
+                <div>
+                    <p class="">Chase Van Amburg</p>
+                </div>
+                <div>
+                    lkajsdfljkasd;lfkjas;dlfkjasd;lfkjasd;lfkjasd;flkjasdf;lkjasdf;lkjasdf;lkjasd;lfkjasd;lfkjas;ldkjf;lkajsdf;lkjasd;lfkjasd;lfkjasl;dkfjal;skjdf;lkj
+                </div>
+            </div>
+            <div class="w-64"></div>
         </div>
     </main>
-    <footer>
-        <div>
+    <footer class="page-footer justify-center items-center h-16 flex">
+        <div class="justify-center items-center text-center">
             The footer.
         </div>
     </footer>
-
 </body>
 
 </html>

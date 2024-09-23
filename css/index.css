@@ -1,11 +1,47 @@
-.page-header {
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+    color: #404244;
+}
+
+body {
+    background-color: #f8f4ee;
+    /* background-image: url('../assets/images/paper3.jpg');
+    background-size: 250px 250px;
+    background-repeat: repeat; */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: -1;
+}
+
+.page-content {
+    /* box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.1); /* More pronounced outer shadow */
+    /* border-radius: 8px; */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    color: red;
-    background-color: blue  ;
+}
+
+.page-header {
+    /*background-color: #f8f4ee;*/
+    color: #404244;
 }
 
 .page-footer {
-    display: flex;
+    /* background-color: #f8f4ee; */
+    background-color: #000000;
+    color: #FFFFFF;
 }

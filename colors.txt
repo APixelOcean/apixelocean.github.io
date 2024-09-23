@@ -1,0 +1,2 @@
+light grey: #616161
+mid grey: #424242
