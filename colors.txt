@@ -1,2 +1,4 @@
 light grey: #616161
 mid grey: #424242
+background-tan: #fDf9f4
+text-grey: #404244

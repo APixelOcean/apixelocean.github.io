@@ -4,29 +4,26 @@
 
 @import "tailwindcss/utilities";
 
+@font-face {
+    font-family: 'Titillium';
+    src: url('../assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal; 
+}
+
 * {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    font-family: Arial, sans-serif;
-    color: #404244;
+    font-family: 'Titillium', sans-serif;
 }
 
 body {
-    background-color: #f8f4ee;
+    background-color: #FFFFFF;
     /* background-image: url('../assets/images/paper3.jpg');
     background-size: 250px 250px;
     background-repeat: repeat; */
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    z-index: -1;
+    color: #000000;
 }
 
 .page-content {
@@ -37,7 +34,7 @@ body {
 
 .page-header {
     /*background-color: #f8f4ee;*/
-    color: #404244;
+    color: #000000;
 }
 
 .page-footer {
