@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "live-server --port=8000 --no-browser",
-    "build-css": "tailwindcss build -i css/index.css -o css/main.css",
-    "start": "concurrently \"npm run build-css\" \"npm run serve\""
+    "compile-less": "lessc css/style.less css/style.css",
+    "start": "concurrently \"npm run compile-less\" \"npm run serve\""
   },
   "author": "",
   "license": "ISC",
