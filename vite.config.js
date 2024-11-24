@@ -1,11 +1,3 @@
-// vite.config.js
 import { defineConfig } from 'vite';
 
-export default defineConfig({
-  server: {
-    port: 8000
-  },
-  css: {
-    postcss: './postcss.config.js', 
-  },
-});
+export default defineConfig({});

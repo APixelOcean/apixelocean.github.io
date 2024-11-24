@@ -1,14 +1,3 @@
-node_modules
-
-# Output
-.output
-.vercel
-/.svelte-kit
-/build
-
-# OS
-.DS_Store
-
 # Logs
 logs
 *.log
