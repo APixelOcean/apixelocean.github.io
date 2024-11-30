@@ -1,4 +1,3 @@
-/* @import url('./palettes/palette1.css'); */
 @import url('./fonts.css');
 
 * {
@@ -38,10 +37,10 @@ h2 {
 
 .container {
   height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   overscroll-behavior: none;
-  overflow: hidden;
 }
 
 a {
@@ -57,6 +56,27 @@ a:hover {
 .desc-text {
   color: var(--p3);
   font-size: var(--fs1);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: var(--s2);
+  opacity: 0.6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--s3);
 }
 
 /* HEADER */
@@ -158,11 +178,7 @@ main {
   margin: 0.5rem;
   margin-top: 0;
   flex: 1;
-  overflow-y: auto;
-  /* background-position: 0 0,0 0;
-  background-repeat: repeat,repeat;
-  background-size: 250px 250px,auto;
-  background-image: url('/assets/images/pixel_square.png'); */
+  overflow-y: clip;
 }
 
 .main-content {
@@ -187,9 +203,9 @@ main {
 .intro {
   display: flex;
   flex-direction: column;
-  border-bottom: 2px solid;
-  border-color: var(--p7);
   padding: 1rem;
+  /* flex: 1; */
+  height: fit-content;
 }
 
 .intro.hidden {
@@ -211,6 +227,13 @@ main {
   display: flex;
   flex-direction: row;
   flex: 1;
+  overflow-y: clip;
+  border-top: 2px solid;
+  border-color: var(--p7);
+}
+
+.articles-simulations.hidden{
+  display: none;
 }
 
 .articles {
@@ -220,6 +243,7 @@ main {
   padding: 1rem;
   border-right: 2px solid;
   border-color: var(--p7);
+  overflow-y: scroll;
 }
 
 .articles.hidden {
@@ -260,11 +284,10 @@ main {
   color: var(--p1);
   cursor: pointer;
   background-color: none;
-  transition: background-color 0.2s ease;
 }
 
 .article * {
-  transition: background-color 0.3s ease-out, color 0.3s ease-out;
+  transition: background-color 0.1s ease-out, color 0.1s ease-out;
 }
 
 .article-title {
@@ -317,6 +340,7 @@ main {
   flex: 1;
   flex-direction: column;
   padding: 1rem;
+  overflow-y: auto;
 }
 
 .simulations.hidden {
@@ -334,6 +358,7 @@ main {
   border-left: 2px solid;
   border-color: var(--p7);
   flex: 1;
+  overflow-y: auto;
 }
 
 .projects.hidden {
@@ -343,9 +368,8 @@ main {
 .project-grid {
   padding: 1rem 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 10px;
-  overflow-y: auto;
 }
 
 @media (max-width: 800px) {
