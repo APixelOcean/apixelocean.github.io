@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="icon" type="image/svg+xml" href="/vite.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./src/style/main.css">
   <link id="palette-stylesheet" rel="stylesheet" href="./src/style/palettes/palette1.css">
@@ -66,27 +65,28 @@
                 <p class="desc-text">A variety of musings and thoughts.</p>
               </div>
               <div class="article-list">
-                <a class="article">
-                  <div class="article-info">
-                    <div class="article-title">Hi</div>
-                    <div class="article-date">Aug 10, 2024</div>
-                  </div>
-                  <div class="article-desc">description</div>
-                </a>
-                <a class="article">
-                  <div class="article-info">
-                    <div class="article-title">Hello</div>
-                    <div class="article-date">Aug 8, 2024</div>
-                  </div>
-                  <div class="article-desc">apple time</div>
-                </a>
-                <a class="article">
-                  <div class="article-info">
-                    <div class="article-title">Hello</div>
-                    <div class="article-date">Aug 8, 2024</div>
-                  </div>
-                  <div class="article-desc">apple time</div>
-                </a>
+                <div class="article-wrapper">
+                  <a class="article">
+                    <div class="article-info">
+                      <div class="article-title">On Nonviolent Communication</div>
+                      <div class="article-details">
+                        <div class="article-date">Nov 25, 2024</div>
+                      </div>
+                    </div>
+                    <div class="article-desc">An analysis of and reflection on Dr. Marshall B. Rosenberg's book <i>Nonviolent Communication</i>.</div>
+                  </a>
+                </div>
+                <div class="article-wrapper">
+                  <a class="article">
+                    <div class="article-info">
+                      <div class="article-title">On My Design Philosophy</div>
+                      <div class="article-details">
+                        <div class="article-date">Nov 24, 2024</div>
+                      </div>
+                    </div>
+                    <div class="article-desc">An analysis of and reflection on Dr. Marshall B. Rosenberg's book <i>Nonviolent Communication</i>.</div>
+                  </a>
+                </div>
               </div>
             </div>
             <div class="simulations" id="simulations">
@@ -106,12 +106,28 @@
         </div>
         <div class="column" id="column-right">
           <div class="projects" id="projects">
-            <div class="project-title">
+            <div class="projects-title">
               <h2>PROJECTS</h2>
               <p class="desc-text">Larger-scale work with tangible results and takeaways.</p>
             </div>
             <div class="project-grid">
-              <div class="project">aaa</div>
+              <a class="project">
+                <div class="project-details">
+                  <div class="project-overview">
+                    <div class="project-title">
+                      DICE ROLLER
+                    </div>
+                    <div class="project-tags">
+                      Tags: UI, TTRPG
+                    </div>
+                  </div>
+                  <div class="project-desc">
+                    A simple but comprehensive dice roller to use for all of your tabletop role-playing needs!
+                  </div>
+                </div>
+                <div class="project-image">
+                </div>
+              </a>
               <div class="project">baa</div>
               <div class="project">caa</div>
               <div class="project">daa</div>
