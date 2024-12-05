@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-node';
+// import adapter from '@sveltejs/adapter-node';
+import adapter from '@sveltejs/adapter-vercel';
 import { mdsvex } from 'mdsvex';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -10,7 +11,10 @@ const config = {
 			})
 	],
 	kit: {
-			adapter: adapter()
+			adapter: adapter({}),
+		// paths: {
+    //         base: process.env.NODE_ENV === 'production' ? '/apixelocean.github.io' : '',
+    //     },
 	}
 };
 
