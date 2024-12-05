@@ -50,7 +50,7 @@ h2 {
     height: fit-content;
     max-height: fit-content;
     overscroll-behavior: unset;
-    overflow-y: auto;
+    overflow-y: scroll;
   }
 }
 
@@ -238,8 +238,12 @@ main {
 }
 
 @media (max-width: 768px) {
+  main {
+    overflow-y: scroll;
+  }
   .main-content {
     flex-direction: column;
+    overflow-y: scroll;
   }
 }
 
@@ -285,7 +289,6 @@ main {
 
 @media (max-width: 768px) {
   .intro {
-    flex: 1;
     overflow-y: auto;
   }
 }
