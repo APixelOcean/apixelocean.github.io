@@ -1,12 +1,12 @@
 <script>
-  // Define props for the component
-  export let href = '/';         // Default link
-  export let title = '';         // Title of the article
-  export let date = '';          // Article's date
-  export let description = '';  // Short description of the article
+  export let id = -1;
+  export let href = '/';
+  export let title = '';
+  export let date = '';
+  export let description = '';
 </script>
 
-<div class="article-wrapper">
+<div class="article-wrapper" id={id}>
   <a class="article" href={href}>
     <div class="article-info">
       <div class="article-title">{title}</div>
