@@ -47,6 +47,8 @@ h2 {
 
 @media (max-width: 768px) {
   .container {
+    height: fit-content;
+    max-height: fit-content;
     overscroll-behavior: unset;
     overflow-y: auto;
   }
