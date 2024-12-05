@@ -1,0 +1,30 @@
+.article-container {
+  background-color: #1D1E20;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.article-content {
+  max-width: 40rem;
+  display: block;
+  padding: 0 1rem;
+}
+
+.article-content h1 {
+  text-align: left;
+  font-family: 'DTMMono', monospace;
+  font-size: 2rem;
+}
+
+.article-content h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+}
+
+.article-content p {
+  line-height: 1.2rem;
+  color: var(--p3);
+}
