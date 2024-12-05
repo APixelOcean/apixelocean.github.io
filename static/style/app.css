@@ -46,10 +46,14 @@ h2 {
 }
 
 @media (max-width: 768px) {
+  body {
+    overscroll-behavior: auto;
+    overflow:auto;
+  }
   .container {
-    height: fit-content;
-    max-height: fit-content;
-    overscroll-behavior: unset;
+    height: auto;
+    max-height: auto;
+    overscroll-behavior: auto;
     overflow-y: scroll;
   }
 }
