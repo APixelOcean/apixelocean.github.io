@@ -123,6 +123,7 @@ header {
 }
 
 #palette-button svg {
+  background-color: transparent;
   stroke: var(--p3);
   transition: stroke 0.2s ease;
   width: 56px;
@@ -278,6 +279,13 @@ main {
   padding: 1rem;
   /* flex: 1; */
   height: fit-content;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex: 1;
+    overflow-y: auto;
+  }
 }
 
 .intro.hidden {
