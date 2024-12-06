@@ -157,5 +157,5 @@
       </div>
     </div>
   </main>
-  <footer>oh hi there. how did ya find me?</footer>
+  <footer>©2024 Chase Van Amburg</footer>
 </div>
