@@ -282,11 +282,11 @@ main {
 
 @media (max-width: 768px) {
   main {
-    /* overflow-y: scroll; */
+    overflow-y: auto;
   }
   .main-content {
     flex-direction: column;
-    /* overflow-y: scroll; */
+    overflow-y: auto;
   }
 }
 
