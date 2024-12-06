@@ -59,8 +59,8 @@ h2 {
 
 @media (max-width: 768px) {
   body {
-    overscroll-behavior: auto;
-    overflow-y:auto;
+    overscroll-behavior: none;
+    /* overflow-y:auto; */
     min-height: fit-content;
   }
   .container {
@@ -264,7 +264,7 @@ main {
   margin: 0.5rem;
   margin-top: 0;
   flex: 1;
-  overflow-y: auto;
+  /* overflow-y: auto; */
   padding: 0rem;
 }
 
@@ -277,6 +277,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  overflow-y: auto;
 }
 
 @media (max-width: 768px) {
