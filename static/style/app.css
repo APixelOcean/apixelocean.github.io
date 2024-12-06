@@ -62,6 +62,7 @@ h2 {
   body {
     overscroll-behavior: auto;
     overflow-y:auto;
+    min-height: fit-content;
   }
   .container {
     height: auto;
