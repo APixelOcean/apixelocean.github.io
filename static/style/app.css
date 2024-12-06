@@ -1,6 +1,18 @@
 @import url('./fonts.css');
 @import url('./article.css');
 
+:root {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+
+
 * {
   /* margin: 0;
   padding: 0; */
@@ -53,7 +65,7 @@ h2 {
   .container {
     height: auto;
     max-height: auto;
-    overscroll-behavior: auto;
+    overscroll-behavior: contain;
     overflow-y: scroll;
   }
 }
@@ -104,12 +116,16 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  min-height: fit-content;
 }
 
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-  }
+.home-header {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0rem;
 }
 
 .logo-container {
@@ -136,6 +152,17 @@ header {
   height: 56px;
 }
 
+@media (max-width: 768px) {
+  header {
+    padding: 0rem 1rem;
+  }
+
+  #palette-button svg {
+    width: 56px;
+    height: 56px;
+  }
+}
+
 #palette-button:hover svg {
   stroke: var(--p1);
 }
@@ -144,13 +171,24 @@ header {
   flex: 1;
   justify-content: center;
   text-align: center;
-  min-width: 25rem;
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    text-align: right;
+  }
 }
 
 .search-container {
   flex: 1;
   text-align: right;
   font-family: 'Fira Mono', monospace;
+}
+
+@media (max-width: 768px) {
+  .search-container {
+    display: none;
+  }
 }
 
 .search-container input {
@@ -221,9 +259,6 @@ header {
 /* MAIN */
 
 main {
-  border: 2px solid;
-  border-color: var(--p1);
-  border-radius: 2px;
   background-color: var(--s1);
   transition: background-color 1.0s ease;
   will-change: background-color;
@@ -231,9 +266,13 @@ main {
   margin-top: 0;
   flex: 1;
   overflow-y: clip;
+  padding: 0rem;
 }
 
 .main-content {
+  border: 2px solid;
+  border-color: var(--p1);
+  border-radius: 2px;
   color: var(--p2);
   height: 100%;
   display: flex;
@@ -243,11 +282,11 @@ main {
 
 @media (max-width: 768px) {
   main {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
   .main-content {
     flex-direction: column;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
   }
 }
 

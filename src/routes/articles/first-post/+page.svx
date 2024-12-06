@@ -1,12 +1,14 @@
 ---
 title: My First Post
+author: Chase Van Amburg
+readingTime: 5 min read
+date: December 6th, 2024
 ---
 
 # { title }
+#### Author: {author} · {readingTime} · {date}
 
-## Why
-
-Reward hacking occurs when.
+## Background
 
 Hello! I'm Chase, and this'll be the first content I post on my website revamp. Still working on the styling and everything.
 
