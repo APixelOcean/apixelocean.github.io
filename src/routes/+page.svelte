@@ -111,7 +111,7 @@
     </div>
   </header>
   <main>
-    <div class="octopus">a</div>
+    <div class="octopus">a<br>a<br>a</div>
     <div class="main-content">
       <div class="column" id="column-left">
         <div class="intro" id="about">
