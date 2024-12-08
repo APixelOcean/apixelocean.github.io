@@ -292,10 +292,14 @@ main {
   main {
     /* overflow-y: auto; */
   }
+  .octopus {
+    height: 15%;
+  }
   .main-content {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
+    height: fit-content;
     /* overflow-y: auto; */
   }
 }
