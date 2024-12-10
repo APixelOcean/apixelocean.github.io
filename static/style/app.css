@@ -271,7 +271,7 @@ main {
 }
 
 .octopus {
-  height: 30%;
+  height: 20%;
 }
 
 .main-content {
@@ -279,7 +279,7 @@ main {
   border-color: var(--p1);
   border-radius: 2px;
   color: var(--p2);
-  height: 70%;
+  height: 80%;
   display: grid;
   grid-template-columns: 400px 1fr;
   justify-content: space-around;

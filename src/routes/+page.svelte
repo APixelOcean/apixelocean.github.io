@@ -14,20 +14,6 @@
       title: "First Post",
       date: "Dec 4, 2024",
       description: "My first post on this new version of my website."
-    },
-    {
-      id: 0,
-      href: "/articles/first-post",
-      title: "First Post",
-      date: "Dec 4, 2024",
-      description: "My first post on this new version of my website."
-    },
-    {
-      id: 0,
-      href: "/articles/first-post",
-      title: "First Post",
-      date: "Dec 4, 2024",
-      description: "My first post on this new version of my website."
     }
   ];
 
