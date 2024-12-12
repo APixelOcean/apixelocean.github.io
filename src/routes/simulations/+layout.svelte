@@ -26,11 +26,12 @@
           </li>
         </ul>
       </div>
+      <div class="header-right"></div>
     </div>
   </header>
   <main>
-    <div class="article-container">
-      <div class="article-content">
+    <div class="simulation-container">
+      <div class="simulation-content">
         <slot></slot>
       </div>
     </div>

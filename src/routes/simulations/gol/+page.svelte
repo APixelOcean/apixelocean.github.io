@@ -2,6 +2,9 @@
   import { onMount } from 'svelte';
   import * as d3 from 'd3';
 
+  let primary;
+  let secondary;
+
   // Grid configuration
   const rows = 50;
   const cols = 50;
@@ -47,6 +50,10 @@
   // Create SVG grid using D3.js
   let svg;
   onMount(() => {
+    const root = document.documentElement;
+    primary = getComputedStyle(root).getPropertyValue('--p1');
+    secondary = getComputedStyle(root).getPropertyValue('--s1');
+
     svg = d3.select('#game-of-life')
       .attr('width', width)
       .attr('height', height);
@@ -60,7 +67,7 @@
       .attr('y', (d, i) => Math.floor(i / cols) * cellSize)
       .attr('width', cellSize)
       .attr('height', cellSize)
-      .attr('fill', d => (d ? 'black' : 'white'))
+      .attr('fill', d => (d ? primary : secondary))
       .attr('stroke', 'gray')
       .attr('stroke-width', 0.5);
 
@@ -82,7 +89,7 @@
       .data(grid.flat())
       .transition()
       .duration(100)
-      .attr('fill', d => (d ? 'black' : 'white'));
+      .attr('fill', d => (d ? primary : secondary));
   }
 
   // Function to initialize grid randomly

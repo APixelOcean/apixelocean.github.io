@@ -1,0 +1,12 @@
+.simulation-container {
+  font-size: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.simulation-content {
+  padding: 0 1rem;
+  border: solid 2px;
+  border-color: var(--p1);
+}

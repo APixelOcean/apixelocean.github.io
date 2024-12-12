@@ -2,8 +2,9 @@
 
 :root {
 
-  --s1: #FAF8F0;
-  --s2: #f0ead6;
+  --s2: #FAF8F0;
+  --s1: #f7f4e8;
+  /* --s2: #f0ead6; */
   --s3: #CCCCCC;
 
   --p1: #000000;

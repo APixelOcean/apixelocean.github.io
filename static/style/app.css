@@ -1,12 +1,13 @@
 @import url('./fonts.css');
 @import url('./article.css');
+@import url('./simulation.css');
 
-:root {
+html {
   font-size: 16px;
 }
 
 @media (max-width: 768px) {
-  :root {
+  html {
     font-size: 14px;
   }
 }
@@ -261,13 +262,13 @@ main {
   background-color: var(--s1);
   transition: background-color 1.0s ease;
   will-change: background-color;
-  margin: 0.5rem;
+  margin: 1rem;
   margin-top: 0;
   flex: 1;
   padding: 0rem;
   display: flex;
   flex-direction: column;
-  height: 10%; /* CHASE: suspect solution */
+  height: 10%;
 }
 
 .octopus {
@@ -275,6 +276,7 @@ main {
 }
 
 .main-content {
+  background-color: var(--s2);
   border: 2px solid;
   border-color: var(--p1);
   border-radius: 2px;
@@ -285,6 +287,7 @@ main {
   justify-content: space-around;
   overflow-y: auto;
   overscroll-behavior: none;
+  transition: background-color 1.0s ease;
 }
 
 @media (max-width: 768px) {
@@ -505,7 +508,7 @@ main {
   border: 2px solid;
   border-radius: 5px;
   border-color: var(--p2);
-  background-color: var(--s2);
+  background-color: var(--s1ew);
   box-shadow: none;
   transition: box-shadow 0.3s ease;
 }

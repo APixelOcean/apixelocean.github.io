@@ -4,6 +4,7 @@
   import Simulation from './components/Simulation.svelte';
   import { storable } from './js/storable.js'
 
+
   let activeSection = storable('activeSection', 'writing');
   let searchQuery = '';
 
@@ -73,16 +74,16 @@
       <div class="nav-container">
         <ul class="nav">
           <li>
-            <button class="button-section" class:active={$activeSection === 'projects'} type="button" on:click={() => toggleShow('projects')}>projects</button>
+            <button class="button-section" class:active={$activeSection === 'projects'} type="button" on:click={() => toggleShow('projects')}>Projects</button>
           </li>
           <li>
-            <button class="button-section" class:active={$activeSection === 'simulations'} type="button" on:click={() => toggleShow('simulations')}>simulations</button>
+            <button class="button-section" class:active={$activeSection === 'simulations'} type="button" on:click={() => toggleShow('simulations')}>Simulations</button>
           </li>
           <li>
-            <button class="button-section" class:active={$activeSection === 'writing'} type="button" on:click={() => toggleShow('writing')}>writing</button>
+            <button class="button-section" class:active={$activeSection === 'writing'} type="button" on:click={() => toggleShow('writing')}>Writing</button>
           </li>
           <li>
-            <button class="button-section" class:active={$activeSection === 'all'} type="button" on:click={() => toggleShow('all')}>all</button>
+            <button class="button-section" class:active={$activeSection === 'all'} type="button" on:click={() => toggleShow('all')}>All</button>
           </li>
         </ul>
       </div>
@@ -97,7 +98,7 @@
     </div>
   </header>
   <main>
-    <div class="octopus">a<br>a<br>a</div>
+    <div class="octopus"></div>
     <div class="main-content">
       <div class="column" id="column-left">
         <div class="intro" id="about">

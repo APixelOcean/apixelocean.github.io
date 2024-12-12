@@ -12,8 +12,14 @@ date: December 6th, 2024
 
 Hello! I'm Chase, and this'll be the first content I post on my website revamp. Still working on the styling and everything.
 
+### Details 1
+
 So, why did I do a revamp? My previous site was a little boring, and sorta just summarized the things I've done, like a resume. Here, I want to post interesting content,
 intellectual explorations, and a wide variety of other things (sorted into Writing, Simulations, and Projects).
+
+### Details 2
+
+Sheep!
 
 ## Bye
 
