@@ -26,6 +26,12 @@
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .article-container {
+    margin-top: 1rem;
+  }
+}
+
 .article-content {
   max-width: 768px;
   display: block;
