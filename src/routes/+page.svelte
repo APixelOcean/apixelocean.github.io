@@ -2,6 +2,7 @@
   import Article from './components/Article.svelte';
   import Project from './components/Project.svelte';
   import Simulation from './components/Simulation.svelte';
+  import Boids from './components/Boids.svelte';
   import { storable } from './js/storable.js'
 
 
@@ -19,14 +20,14 @@
   ];
 
   let projects = [
-    // {
-    //   id: 0,
-    //   href: "/",
-    //   title: "DICE ROLLER",
-    //   tags: "UI, TTRPG",
-    //   description: "A simple but comprehensive dice roller to use for all of your tabletop role-playing needs!",
-    //   img: ''
-    // },
+    {
+      id: 0,
+      href: "/",
+      title: "DICE ROLLER",
+      tags: "UI, TTRPG",
+      description: "A simple but comprehensive dice roller to use for all of your tabletop role-playing needs!",
+      img: ''
+    },
   ];
 
   let sims = [
@@ -98,7 +99,10 @@
     </div>
   </header>
   <main>
-    <div class="octopus"></div>
+    <div class="octopus">
+      <div class="octo-title">Hey, I'm Chase | Cognitive Science, Data Visualization, Evolutionary Computation</div>
+      <div class="octo-detail">This site is new and under construction. Look forward to more content coming soon.</div>
+    </div>
     <div class="main-content">
       <div class="column" id="column-left">
         <div class="intro" id="about">
@@ -106,11 +110,15 @@
             <h2>ABOUT ME</h2>
           </div>
           <div class="intro-text">
-            <p>Hi, I'm Chase. Mathematical biologist and creative technologist. <br>Currently at <a
-                href="https://fathom.info" target="_blank">Fathom Information Design</a>. Previously at Harvard.</p>
+            <p>I'm a mathematical biologist and creative technologist. <br>Currently at <a
+                href="https://fathom.info" target="_blank">Fathom Information Design</a>.<br>Previously at Harvard.</p>
             <br>
-            <p><b>Interests</b>: Data visualization and modeling for social impact, evolutionary dynamics,
-              computational theories of intelligence.</p>
+            <p><b>Interests</b>:</p>
+            <ul>
+              <li>Computational theories of intelligence</li>
+              <li>Data visualization and modeling for social impact</li>
+              <li>Evolutionary dynamics</li>
+            </ul>
             <br>
             <p><b>Goals</b>: Do something(s) interesting.</p>
           </div>
