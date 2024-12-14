@@ -125,7 +125,7 @@
         </div>
       </div>
       <div class="column" id="column-right">
-        <div class="projects" id="projects" class:hidden={$activeSection !== 'projects' && $activeSection !== 'all'}>
+        <div class="projects" id="projects" class:hidden={$activeSection !== 'projects' && $activeSection !== 'all'} class:all={$activeSection === 'all'}>
           <div class="projects-title">
             <h2>PROJECTS</h2>
             <p class="desc-text">Larger-scale work with tangible results and takeaways.</p>
@@ -143,7 +143,7 @@
             {/each}
           </div>
         </div>
-        <div class="simulations" id="simulations" class:hidden={$activeSection !== 'simulations' && $activeSection !== 'all'}>
+        <div class="simulations" id="simulations" class:hidden={$activeSection !== 'simulations' && $activeSection !== 'all'} class:all={$activeSection === 'all'}>
           <div class="sims-title">
             <h2>SIMULATIONS</h2>
             <p class="desc-text">Largely inspired by the sites of <a href="http://www.complexity-explorables.org"
@@ -163,7 +163,7 @@
             {/each}
           </div>
         </div>
-        <div class="articles" id="writing" class:hidden={$activeSection !== 'writing' && $activeSection !== 'all'}>
+        <div class="articles" id="writing" class:hidden={$activeSection !== 'writing' && $activeSection !== 'all'} class:all={$activeSection === 'all'}>
           <div class="articles-title">
             <h2>WRITING</h2>
             <p class="desc-text">A variety of musings and thoughts.</p>

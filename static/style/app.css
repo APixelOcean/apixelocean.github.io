@@ -373,6 +373,8 @@ main {
   display: none;
 }
 
+
+
 .intro-text {
   padding: 1rem 0;
   flex: 1;
@@ -500,6 +502,9 @@ main {
   flex: 1;
   flex-direction: column;
   padding: 1rem;
+}
+
+.simulations.all {
   border-bottom: 2px solid;
   border-color: var(--p7);
 }
@@ -574,6 +579,9 @@ main {
 .projects {
   padding: 1rem;
   flex: 1;
+}
+
+.projects.all {
   border-bottom: 2px solid;
   border-color: var(--p7);
 }
