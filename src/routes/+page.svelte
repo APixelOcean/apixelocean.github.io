@@ -1,5 +1,6 @@
 <script>
   import Article from './components/Article.svelte';
+  import Card from './components/Card.svelte';
   import Project from './components/Project.svelte';
   import Simulation from './components/Simulation.svelte';
   import Boids from './components/Boids.svelte';
@@ -8,6 +9,19 @@
 
   let activeSection = storable('activeSection', 'writing');
   let searchQuery = '';
+
+  let cards = [
+    {
+      href: "",
+      title: "Trees as Data",
+      id: 1,
+      total: 1,
+      date: "Jan 2025",
+      imgpath: "/assets/images/treedata1.jpg",
+      description: `<p>Data and trees seem to hold almost opposite connotations. Data feels digital, numeric, and almost corporate; trees feel natural, grounded, and alive.</p>
+        <p>So, how can we understand what it means to represent trees as data?</p>`
+    }
+  ]
 
   let articles = [
     {
@@ -60,128 +74,48 @@
   });
 </script>
 
-<div class="container">
-  <header>
-    <div class="home-header">
-      <div class="logo-container">
-        <button type="button" id="palette-button" aria-label="Switch Color Palette" on:click={switchPalette}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -0.5 28 28" shape-rendering="crispEdges">
-            <metadata>Made with Pixels to Svg https://codepen.io/shshaw/pen/XbxvNj</metadata>
-            <path
-              d="M9 0h9M7 1h13M5 2h4M11 2h11M4 3h4M9 3h2M12 3h4M19 3h4M3 4h1M5 4h11M20 4h4M2 5h1M4 5h2M7 5h11M20 5h1M23 5h2M1 6h1M3 6h23M3 7h2M6 7h2M10 7h7M18 7h8M0 8h1M5 8h3M10 8h2M15 8h3M19 8h1M22 8h5M4 9h2M7 9h4M16 9h2M19 9h1M23 9h4M5 10h5M12 10h3M16 10h5M23 10h5M2 11h3M6 11h4M11 11h4M16 11h12M5 12h1M7 12h3M11 12h4M16 12h12M6 13h6M15 13h13M7 14h5M14 14h2M18 14h10M1 15h1M7 15h9M18 15h10M1 16h2M7 16h3M13 16h5M20 16h5M26 16h2M2 17h2M7 17h2M10 17h3M14 17h4M20 17h1M23 17h5M6 18h4M13 18h1M15 18h6M23 18h1M26 18h1M0 19h1M4 19h5M14 19h1M17 19h6M25 19h2M1 20h1M6 20h2M17 20h6M24 20h2M6 21h2M15 21h4M20 21h2M24 21h2M7 22h1M9 22h2M16 22h5M24 22h1M3 23h1M10 23h3M23 23h1M4 24h1M18 24h2M17 25h1M10 27h1M12 27h1" />
-          </svg>
-        </button>
-      </div>
-      <div class="nav-container">
-        <ul class="nav">
-          <li>
-            <button class="button-section" class:active={$activeSection === 'projects'} type="button" on:click={() => toggleShow('projects')}>Projects</button>
-          </li>
-          <li>
-            <button class="button-section" class:active={$activeSection === 'simulations'} type="button" on:click={() => toggleShow('simulations')}>Simulations</button>
-          </li>
-          <li>
-            <button class="button-section" class:active={$activeSection === 'writing'} type="button" on:click={() => toggleShow('writing')}>Writing</button>
-          </li>
-          <li>
-            <button class="button-section" class:active={$activeSection === 'all'} type="button" on:click={() => toggleShow('all')}>All</button>
-          </li>
-        </ul>
-      </div>
-        <div class="search-container">
-          <input
-            type="text"
-            placeholder="Search {$activeSection}..."
-            bind:value={searchQuery}
-            aria-label="Search items"
-          />
-        </div>
+
+<header>
+  
+  <div class="header-top">
+    <div class="title">
+      <p>Chase Van&nbsp;Amburg</p>
     </div>
-  </header>
-  <main>
-    <div class="octopus">
-      <div class="octo-title">Hey, I'm Chase | Cognitive Science, Data Visualization, Evolutionary Computation</div>
-      <div class="octo-detail">This site is new and under construction. Look forward to more content coming soon.</div>
-    </div>
-    <div class="main-content">
-      <div class="column" id="column-left">
-        <div class="intro" id="about">
-          <div class="intro-title">
-            <h2>ABOUT ME</h2>
-          </div>
-          <div class="intro-text">
-            <p>I'm a mathematical biologist and creative technologist. <br>Currently at <a
-                href="https://fathom.info" target="_blank">Fathom Information Design</a>.<br>Previously at Harvard.</p>
-            <br>
-            <p><b>Interests</b>:</p>
-            <ul>
-              <li>Computational theories of intelligence</li>
-              <li>Data visualization and modeling for social impact</li>
-              <li>Evolutionary dynamics</li>
-            </ul>
-            <br>
-            <p><b>Goals</b>: Do something(s) interesting.</p>
-          </div>
-        </div>
+  </div>
+  <div class="header-bottom">
+    <div class="bottom-wrapper">
+      <div class="content-selection">
+        <button class="content-tag">Science</button>
+        <button class="content-tag">Simulations</button>
+        <button class="content-tag">Music</button>
       </div>
-      <div class="column" id="column-right">
-        <div class="projects" id="projects" class:hidden={$activeSection !== 'projects' && $activeSection !== 'all'} class:all={$activeSection === 'all'}>
-          <div class="projects-title">
-            <h2>PROJECTS</h2>
-            <p class="desc-text">Larger-scale work with tangible results and takeaways.</p>
-          </div>
-          <div class="project-grid">
-            {#each filteredProjects as project}
-              <Project
-                id={project.id}
-                title={project.title}
-                href={project.href}
-                tags={project.tags}
-                description={project.description}
-                img={project.img}
-              />
-            {/each}
-          </div>
-        </div>
-        <div class="simulations" id="simulations" class:hidden={$activeSection !== 'simulations' && $activeSection !== 'all'} class:all={$activeSection === 'all'}>
-          <div class="sims-title">
-            <h2>SIMULATIONS</h2>
-            <p class="desc-text">Largely inspired by the sites of <a href="http://www.complexity-explorables.org"
-                target="_blank">Dirk Brockmann</a> and <a href="http://ncase.me" target="_blank">Nicky Case</a>,
-              these are interactive simulations for understanding cool natural phenomena.</p>
-          </div>
-          <div class="sim-list">
-            {#each filteredSims as sim}
-              <Simulation
-                id={sim.id}
-                title={sim.title}
-                href={sim.href}
-                imgPath={sim.imgPath}
-                imgDesc={sim.imgDesc}
-                description={sim.description}
-              />
-            {/each}
-          </div>
-        </div>
-        <div class="articles" id="writing" class:hidden={$activeSection !== 'writing' && $activeSection !== 'all'} class:all={$activeSection === 'all'}>
-          <div class="articles-title">
-            <h2>WRITING</h2>
-            <p class="desc-text">A variety of musings and thoughts.</p>
-          </div>
-          <div class="article-list">
-            {#each filteredArticles as article}
-              <Article
-                id={article.id}
-                title={article.title}
-                date={article.date}
-                description={article.description}
-                href={article.href}
-              />
-            {/each}
-          </div>
-        </div>
-      </div>
+      <input class="search-box" type="text" placeholder="Search . . ."> 
     </div>
-  </main>
-  <footer>©2024 Chase Van Amburg</footer>
-</div>
+  </div>
+</header>
+<main>
+  <div class="card-container">
+    <div class="about-me">
+      <p>Hi there! I'm Chase. I'm into theories of intelligence, evolutionary computation, and telling stories with data.</p>
+      <div class="portrait">
+        <img src="/assets/images/portrait1.png" alt="A pixellated portrait of the website author, Chase Van Amburg.">
+      </div>
+      <p>I'm a developer and designer at <a href="https://fathom.info" class="link">Fathom Information Design</a>. Before that, I received my B.A. in Integrative Biology/Computer Science and M.S. in Applied Math from Harvard.</p>
+      <p>Goal: Do something interesting.</p>
+    </div>
+    {#each cards as card}
+    <Card 
+      href={card.href}
+      title={card.title}
+      id={card.id}
+      total={card.total}
+      date={card.date}
+      imgpath={card.imgpath}
+      description={card.description}
+    />
+  {/each}
+  </div>
+</main>
+<footer>
+  Interested in a conversation, a collaboration, or even some collusion? No matter who you are, please reach out!
+</footer>
