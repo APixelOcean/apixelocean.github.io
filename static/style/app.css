@@ -200,6 +200,7 @@ footer {
   border-bottom: none;
   border-left: 1px solid var(--p1);
   border-right: 1px solid var(--p1);
+  border-radius: 0px;
   font-size: 1rem;
   font-family: 'FiraMono', sans-serif;
 }
