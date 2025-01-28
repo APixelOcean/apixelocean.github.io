@@ -68,10 +68,6 @@
 
   import { onMount } from 'svelte';
   import { palette, switchPalette, setPalette, moonSVG, sunSVG } from './js/palette.js';
-
-  onMount(() => {
-    setPalette($palette);
-  });
 </script>
 
 
