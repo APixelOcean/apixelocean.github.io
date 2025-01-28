@@ -133,7 +133,7 @@ footer {
 }
 
 .header-top {
-  padding: 0rem var(--side-padding);
+  padding: 0;
   border-bottom: 1px solid var(--p1);
   display: flex;
   justify-content: center;
