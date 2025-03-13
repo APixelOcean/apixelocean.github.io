@@ -1,4 +1,11 @@
 @font-face {
+  font-family: 'PokemonClassic';
+  src: url('/assets/fonts/Pokemon_Classic/pokemon_classic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'FiraMono';
   src: url('/assets/fonts/Fira_Mono/FiraMono-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -14,10 +21,60 @@
 
 @font-face {
   font-family: 'PixelifySans';
-  src: url('/assets/fonts/Pixelify_Sans/PixelifySans-VariableFont_wght.ttf') format('truetype');
-  font-weight: normal;
+  src: url('/assets/fonts/Pixelify_Sans/static/PixelifySans-Regular.ttf') format('truetype');
+  font-weight: 400;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'PixelifySans';
+  src: url('/assets/fonts/Pixelify_Sans/static/PixelifySans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PixelifySans';
+  src: url('/assets/fonts/Pixelify_Sans/static/PixelifySans-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PixelifySans';
+  src: url('/assets/fonts/Pixelify_Sans/static/PixelifySans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('/assets/fonts/Space_Mono/SpaceMono-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('/assets/fonts/Space_Mono/SpaceMono-Italic.ttf');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('/assets/fonts/Space_Mono/SpaceMono-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SpaceMono';
+  src: url('/assets/fonts/Space_Mono/SpaceMono-BoldItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
 
 @font-face {
   font-family: 'Montserrat';
@@ -49,15 +106,36 @@
 
 @font-face {
   font-family: 'Roboto';
+  src: url('/assets/fonts/Roboto/Roboto-Thin.ttf') format('truetype');
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/Roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
   src: url('/assets/fonts/Roboto/Roboto-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('/assets/fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Roboto';
   src: url('/assets/fonts/Roboto/Roboto-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 

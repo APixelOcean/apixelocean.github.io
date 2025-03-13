@@ -1,0 +1,31 @@
+---
+title: Trees as Data
+author: Chase Van Amburg
+readingTime: 5 min read
+date: December 6th, 2024
+---
+
+# { title }
+#### Author: {author} · {readingTime} · {date}
+
+## Introduction
+Data seems to become more popular every day. And, with that popularity, there has also been a fundamental shift in the implications of the word *data*. In the past, data was mostly just numbers: the speed of a falling rock, the price of grain over time, or the distance of stars in the sky. To many nowadays, data is the personal information that companies are always trying to collect when you visit their websites; it has your name, email, maybe even the habits of how you use your phone or what websites you like to visit. It seems related to Cookies and Terms of Service. Data is something that often seems opaque and inaccessible. And it is!
+
+As someone who spends every day working with data, I try as much as possible to have an expansive understanding of the word. Data can include personal information, scientific results, government surveys, and so much more. It can be powerful, it can be scary, data it be private or public, it can be numbers, words, or images - at this point, data can be almost anything. Ultimately, ~a data set is a collection of records that provide information about a phenomenon~.  So, now that we have a definition that’s pretty much meaningless, let’s look at a few examples of how we can extract data from trees – those magnificent, ancient, life-giving organisms – and what that data tells us about the world.
+
+## 1. The Data of Savannah Canopies
+
+I was lucky enough to work with the fantastic [Naomi Pierce Lab](https://piercelab.oeb.harvard.edu/current-members) throughout the year of 2022. Professor Pierce has done revolutionary work in behavioral ecology (the study of behavior- based interactions between organisms) and entomology (the study of insects) for a number of years. Recently, a significant focus of her lab has been a specific system: the whistling thorn acacia and its symbiotic ants.
+
+*IMAGE*
+With caption.
+
+This relationship is really special. The tree forms hollow wooden balls along its branches called *domatia*, in which the ants reside. The ants fight off other insect invaders and herbivores, including even giraffes and elephants! In return, the acacia tree provides sweet nectar to sustain its resident ants – 
+
+## 2. The Data of Boston’s History
+
+
+## 3. The Data of Deforestation
+
+## Conclusion
+Something conclusive.

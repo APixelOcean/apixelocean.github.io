@@ -32,12 +32,12 @@ html {
 }
 
 body {
-  background-color: var(--s1);
+  background-color: var(--s2);
   transition: background-color 1.0s ease;
   font-family: 'FiraMono';
   overscroll-behavior: none;
   line-height: 1.4rem;
-  min-height: 100vh;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
 }
@@ -222,9 +222,32 @@ footer {
 /* MAIN */
 
 main {
-  display: block;
-  padding: 2rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);; /* 5fr 6fr 5fr */
+  margin: 2rem;
+  border-top: 3px solid black;
+  border-left: 3px solid black;
   flex: 1;
+  /* box-shadow: 10px 10px 2px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: inset -2px 2px 10px 0px rgba(0, 0, 0, 0.7); */
+}
+
+@media (max-width: 1200px) {
+  main {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1080px) {
+  main {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  main {
+    margin: 1rem;
+  }
 }
 
 button {
@@ -248,6 +271,191 @@ a.link {
 a.link:hover {
   color: var(--a2);
 }
+
+.column {
+  flex: 1;
+  background-color: var(--s1);
+  display: flex;
+  flex-direction: column;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.column-section {
+  padding: 0.5rem;
+  flex: 1;
+}
+
+.column-section:not(:last-child) {
+  border-bottom: 3px solid black;
+}
+
+.column-section-title {
+  padding: 0.5rem;
+  font-family: 'SpaceMono';
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+}
+
+.column .column-section-title:not(:last-child) {
+  border-bottom: 3px solid black;
+}
+
+.column-paragraph {
+  font-family: 'SpaceMono', sans-serif;
+  font-weight: 400;
+}
+.column-paragraph p {
+  margin-top: 0;
+}
+
+.column-wide {
+  grid-column: span 2;
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.placeholder {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 3rem;;
+  font-family: 'PixelifySans', sans-serif;
+}
+
+
+/* Center Column */
+
+.about {
+  min-width: 500px;
+}
+
+@media (max-width: 1080px) {
+  .about {
+    min-width: 0;
+  }
+}
+
+
+.big-name {
+  font-family: 'PixelifySans', sans-serif;
+  font-weight: 600;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 3rem;
+}
+
+.sketch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+}
+
+.sketch-container:hover {
+  cursor: pointer;
+}
+
+.personal-list {
+  font-size: 1.5rem;
+  display: flex;
+  flex: 1;
+  list-style: none;
+  font-family: 'PixelifySans', sans-serif;
+  font-weight: 400;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: var(--p1);
+  padding: 0;
+  line-height: 1.5rem;
+}
+
+.personal-list .item-name {
+  font-weight: 600;
+  color: var(--p1);
+}
+
+/* RIGHT COLUMN */
+
+.selectors-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.selectors {
+  padding: 0;
+  flex: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.selectors-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.selector {
+  font-family: 'SpaceMono', sans-serif;
+  font-weight: 700;
+  flex: 1;
+  white-space: nowrap;
+  /* font-style: italic; */
+  text-align: center;
+  outline: 3px solid var(--p1);
+  /* border-top: none;
+  border-left: none; */
+  width: fit-content;
+  padding: 0.5rem;
+  cursor: pointer;
+  color: var(--p3);
+  background-color: var(--s1);
+  /* background: linear-gradient(to bottom, var(--p1) 50%, var(--s1) 50%); */
+  /* background-size: 100% 200%; */
+  /* background-position: right bottom; */
+  transition: all .1s ease;
+}
+
+.selector:hover {
+  color: var(--s2);
+  background-color: var(--p2);
+  /* background-position: right top; */
+}
+
+.selected.selected {
+  /* background-position: right top; */
+  color: var(--s1);
+  background-color: var(--p1);
+}
+
+.selector.selected:hover {
+  color: var(--s2);
+  background-color: var(--p2);
+  /* background-position: right bottom; */
+}
+
+.selectors-info {
+  padding: 2.5rem 0.5rem;
+  font-family: 'SpaceMono', sans-serif;
+}
+
+
+
+
 
 .about-me {
   padding: 0.5rem 0.5rem;
