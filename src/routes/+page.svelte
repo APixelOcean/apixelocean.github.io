@@ -123,10 +123,10 @@
           {selectorDetails}
         </div>
     </div>
-    <div class="column-section-title" class:visually-hidden={selection !== "home"}>
-      Statement
-    </div>
-    <div class="column-section" class:visually-hidden={selection !== "home"}>
+    <div class="column-section titled" class:visually-hidden={selection !== "home"}>
+      <div class="column-section-title" class:visually-hidden={selection !== "home"}>
+        Statement
+      </div>
       <div class="column-paragraph">
         <p>
           Evolution, as formalized by Darwin in the mid-1800s, is the directional change in populations of living organisms over time. Mechanisms such as natural selection and drift
@@ -141,11 +141,38 @@
   </div>
 
   <div class="column about" class:visually-hidden={selection !== "home"}>
-    <div class="column-section">
+    <div class="column-section about-section">
       <div class="big-name">
         Chase Van Amburg
       </div>
+      <div class="grow">
+      </div>
+      
       <SelfPortrait />
+      <div class="grow">
+      </div>
+      <div class="grow">
+      </div>
+      <div class="grow">
+        <p><span class="item-name">Specialties</span>: Evolutionary Dynamics, Theories of Intelligence, Teaching, Complex Systems</p>
+      </div>
+      <div class="grow">
+        <p><span class="item-name">Employer</span>: Fathom Information Design</p>
+      </div>
+      <div class="grow">
+        <p><span class="item-name">Affiliations</span>: Kempner Institute for Natural and Artificial Intelligence</p>
+      </div>
+      <div class="grow">
+        <p><span class="item-name">Location</span>: Boston, MA</p>
+      </div>
+      <div class="grow">
+        <p><span class="item-name">Education</span>: M.S. in Applied Math, B.A. in Integrative Biology [Harvard]</p>
+      </div>
+      <div class="grow">
+        <p><span class="item-name">Goal</span>: Develop computational theories of evolution.</p>
+      </div>
+    </div>
+    <!-- <div class="column-section">
       <ul class="personal-list">
         <li>
           <span class="item-name">Specialties</span>: Evolutionary Dynamics, Theories of Intelligence, Teaching, Complex Systems
@@ -166,7 +193,7 @@
           <span class="item-name">Goal</span>: Develop computational theories of evolution.
         </li>
       </ul>
-    </div>
+    </div> -->
     
   </div>
 
