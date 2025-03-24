@@ -80,137 +80,52 @@
 </script>
 
 <main>
-  <div class="column misc">
-    <div class="column-section selectors">
-        <div class="selectors-list">
-          <button class={selection === "home" ? "selector selected" : "selector"} 
-          on:mouseover={() => setHoverSelection("home")} 
-          on:focus={() => setHoverSelection("home")} 
-          on:mouseleave={restoreClickedSelection} 
-          on:click={() => setSelection("home")}
-            >Home
-          </button>
-          <a href="/" class={selection === "resume" ? "selector selected" : "selector"} 
-          on:mouseover={() => setHoverSelection("resume")} 
-          on:focus={() => setHoverSelection("resume")} 
-          on:mouseleave={restoreClickedSelection} 
-            >Resumé
-          </a>
-          <!-- <a class="selector" target="_blank" href="/files/resume.pdf">Resumé</a> -->
-          <button class={selection === "about" ? "selector selected" : "selector"} 
-          on:mouseover={() => setHoverSelection("about")} 
-          on:focus={() => setHoverSelection("about")} 
-          on:mouseleave={restoreClickedSelection} 
-          on:click={() => setSelection("about")}
-            >About
-          </button>
-          <button class={selection === "projects" ? "selector selected" : "selector"} 
-          on:mouseover={() => setHoverSelection("projects")} 
-          on:focus={() => setHoverSelection("projects")} 
-          on:mouseleave={restoreClickedSelection} 
-          on:click={() => setSelection("projects")}
-            >Projects
-          </button>
-          <button class={selection === "collab" ? "selector selected" : "selector"} 
-          on:mouseover={() => setHoverSelection("collab")} 
-          on:focus={() => setHoverSelection("collab")} 
-          on:mouseleave={restoreClickedSelection} 
-          on:click={() => setSelection("collab")}
-            >Work With Me
-          </button>
-        </div>
-        <div class="selectors-info">
-          {selectorDetails}
-        </div>
+  <div class="container">
+    <h1>CHASE<br>VAN AMBURG</h1>
+    <h2>Mathematical Biology + Software Engineering</h2>
+    <div class="link-list">
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#collaborate">collaborate</a>
+      <a href="/files/cv-resume-mar25.pdf" target="_blank">resumé</a>
     </div>
-    <div class="column-section titled" class:visually-hidden={selection !== "home"}>
-      <div class="column-section-title" class:visually-hidden={selection !== "home"}>
-        Statement
-      </div>
-      <div class="column-paragraph">
-        <p>
-          Evolution, as formalized by Darwin in the mid-1800s, is the directional change in populations of living organisms over time. Mechanisms such as natural selection and drift
-          define how and why biological diversity arises and is maintained in the world.
-        </p>
-        <p>
-          I believe that evolution acts not only on biological organisms, but to human-made constructs as well, including language, culture, objects, and digital technology.
-          I aim to extend the theory of evolution to explain the existence of these constructs, primarily through theories of computation.
-        </p>
-      </div>
-    </div>
-  </div>
 
-  <div class="column about" class:visually-hidden={selection !== "home"}>
-    <div class="column-section about-section">
-      <div class="big-name">
-        Chase Van Amburg
-      </div>
-      <div class="grow">
-      </div>
-      
-      <SelfPortrait />
-      <div class="grow">
-      </div>
-      <div class="grow">
-      </div>
-      <div class="grow">
-        <p><span class="item-name">Specialties</span>: Evolutionary Dynamics, Theories of Intelligence, Teaching, Complex Systems</p>
-      </div>
-      <div class="grow">
-        <p><span class="item-name">Employer</span>: Fathom Information Design</p>
-      </div>
-      <div class="grow">
-        <p><span class="item-name">Affiliations</span>: Kempner Institute for Natural and Artificial Intelligence</p>
-      </div>
-      <div class="grow">
-        <p><span class="item-name">Location</span>: Boston, MA</p>
-      </div>
-      <div class="grow">
-        <p><span class="item-name">Education</span>: M.S. in Applied Math, B.A. in Integrative Biology [Harvard]</p>
-      </div>
-      <div class="grow">
-        <p><span class="item-name">Goal</span>: Develop computational theories of evolution.</p>
-      </div>
+    <div id="about" class="section">
+      <h3 class="section-title">about</h3>
+      <p>I'm a recent graduate employed by <a href="https://fathom.info/" target="_blank">Fathom Information Design</a>. On the side, I teach for <a href="https://www.curiouscardinals.com/" target="_blank">Curious Cardinals</a> and do intelligence research at the <a href="https://kempnerinstitute.harvard.edu/" target="_blank">Kempner Institute</a>.</p>
+      <p>Evolution is my passion, especially understanding its behavior beyond genetics. My primary interests are</p>
+      <ol>
+        <li><b>Intelligence</b>, the current peak of evolutionary complexity,</li>
+        <li><b>Ecology</b>, the study of interactions between evolved organisms, </li>
+        <li><b>Computation</b>, the rules which drive complex and dynamical systems, and</li>
+        <li><b>Design</b>, the abstract models used to create.</li>
+      </ol>
+      <p>I aim to extend the theory of evolution to anthropogenic systems, such as digital technology, through computational models.</p>
     </div>
-    <!-- <div class="column-section">
-      <ul class="personal-list">
-        <li>
-          <span class="item-name">Specialties</span>: Evolutionary Dynamics, Theories of Intelligence, Teaching, Complex Systems
-        </li>
-        <li>
-          <span class="item-name">Employer</span>: Fathom Information Design
-        </li>
-        <li>
-          <span class="item-name">Affiliations</span>: Kempner Institute for Natural and Artificial Intelligence
-        </li>
-        <li>
-          <span class="item-name">Location</span>: Boston, MA
-        </li>
-        <li>
-          <span class="item-name">Education</span>: M.S. in Applied Math, B.A. in Integrative Biology [Harvard]
-        </li>
-        <li>
-          <span class="item-name">Goal</span>: Develop computational theories of evolution.
-        </li>
-      </ul>
-    </div> -->
-    
-  </div>
 
-  <div class="column statement" class:visually-hidden={selection !== "home"}>
-    <div class="column-section">
-      <Pendulum />
-    </div>
-    <div class="column-section">
-      <Runner />
-    </div>
-  </div>
+    <div id="work" class="section">
+      <h3 class="section-title">work</h3>
+      <div id="projects" class="subsection">
+        <h4 class="subsection-title">projects</h4>
+        <ul>
+          <li>coming soon</li>
+        </ul>
+      </div>
 
-  <div class="column column-wide" class:visually-hidden={selection === "home"}>
-    <div class="column-section">
-      <div class="placeholder">
-        Under<br>Construction
+      <div id="articles" class="subsection">
+        <h4 class="subsection-title">articles</h4>
+        <ul>
+          <li>coming soon</li>
+        </ul>
       </div>
     </div>
+
+    <div id="collaborate" class="section">
+      <h3 class="section-title">collaborate</h3>
+      <p>Interested in having a conversation or working together on a project? Please send an email to [first initial][last name] [at] college [dot] harvard [dot] [edu].</p>
+      <p>I enjoy most things, including talking, doing scientific research, and developing a creative idea.</p>
+    </div>
+
+
   </div>
 </main>
