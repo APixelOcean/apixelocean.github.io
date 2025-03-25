@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <script type="module" src="main.js"> </script>
+  <title> Shots </title>
+</head>
+
+<body class="hidden" onload="checkPassword()">
+  <h1>Anomaly Report</h1>
+  <div class="report">
+    <div class="subreport" id="summary">
+      <h3>Executive Summary</h3>
+      <p>An anonymous male human between the age of twenty to thirty years, henceforth referred to as L.D.W., engaged in anomalous behaviours around the area of Cambridge, Massachussetts, from 3:00pm to 3:03pm on Sunday, March 16th, 2025.</p>
+      <p>Biometric analyses of L.D.W. indicate a "free-throw percentage maximum" (FTPM) of roughly 0.069, under ideal conditions; this value was far surpassed, albeit for an incredibly short period of time, and the usefulness of the FTPM metric as a direct proxy for evolutionary fitness is being reevaluated by our most talented intern. Further study required<span class="cursor">_</span></p>
+      <h3>Charts</h3>
+      <div class="chart-container">
+        <h4>FTP</h4>
+        <div class="chart-box">
+          <div class="bar-expected"><div class="bar-label">HUMAN AVERAGE</div></div>
+          <div class="bar-average"><div class="bar-label">L.D.W. [EXPECTED]</div></div>
+          <div class="bar-luca"><div class="bar-label">L.D.W [ACTUAL]</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="subreport" id="details">
+      <h3>Results</h3>
+      <div id="shots-container" class="shots-grid">
+      </div>
+      <h3>Details</h3>
+      <p>No attempt selected.</p>
+    </div>
+  </div>
+</body>
+
+</html>
