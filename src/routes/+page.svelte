@@ -95,10 +95,10 @@
       <p>I'm a recent graduate employed by <a href="https://fathom.info/" target="_blank">Fathom Information Design</a>. On the side, I teach for <a href="https://www.curiouscardinals.com/" target="_blank">Curious Cardinals</a> and do intelligence research at the <a href="https://kempnerinstitute.harvard.edu/" target="_blank">Kempner Institute</a>.</p>
       <p>Evolution is my passion, especially understanding its behavior beyond genetics. My primary interests are</p>
       <ol>
-        <li><b>Intelligence</b>, the current peak of evolutionary complexity,</li>
-        <li><b>Ecology</b>, the study of interactions between evolved organisms, </li>
-        <li><b>Computation</b>, the rules which drive complex and dynamical systems, and</li>
-        <li><b>Design</b>, the abstract models used to create.</li>
+        <li><b>intelligence</b>, the current peak of evolutionary complexity,</li>
+        <li><b>ecology</b>, the study of interactions between evolved organisms, </li>
+        <li><b>computation</b>, the rules which drive complex and dynamical systems, and</li>
+        <li><b>design</b>, the abstract models used to create.</li>
       </ol>
       <p>I aim to extend the theory of evolution to anthropogenic systems, such as digital technology, through computational models.</p>
     </div>
