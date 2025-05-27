@@ -148,7 +148,7 @@ h2 {
 
 .link-list {
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -276,6 +276,7 @@ ul li::marker {
 @media (max-width: 1024px) {
   .project-grid {
     grid-template-columns: repeat(1, 1fr);
+    gap: 3rem;
     justify-items: center;
   }
   .project-block {
