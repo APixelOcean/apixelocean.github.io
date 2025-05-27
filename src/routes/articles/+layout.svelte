@@ -36,16 +36,13 @@
   });
 </script>
 
-<div class={isHidden ? "article-header hidden" : "article-header"}>
-  <a href="/" class="title">
-    C
-  </a>
-</div>
 <main>
-  <div class="article-container">
-    <div class="article-content">
-      <slot></slot>
+  <div class="article container">
+    <div class={isHidden ? "article-header hidden" : "article-header"}>
+      <a href="/" class="title">
+        C
+      </a>
     </div>
+    <slot></slot>
   </div>
 </main>
-<footer>©2025 Chase Van Amburg</footer>

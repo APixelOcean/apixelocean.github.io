@@ -1,96 +1,190 @@
-.article-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px;
-  text-align: left;
-  transition: transform 0.3s ease-in-out;
-  background-color: var(--s1);
-  border-bottom: 1px solid var(--p1);
-  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+@import url('./fonts.css');
+@import url('./article.css');
+@import url('./simulation.css');
+
+:root {
+  --content-width: 1240px;
+  --side-padding: 20px;
 }
 
-/* When isHidden is true, move the header out of view */
-.hidden {
-  transform: translateY(-100%);
-}
-
-.home-container {
-  justify-content: left;
-  text-align: left;
-  flex: 1;
-}
-
-.header-right {
-  flex: 1;
-}
-
-.article-container {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.9rem;
-  flex: 1;
-  display: flex;
-  justify-content: center;
+html {
+  font-size: 18px;
 }
 
 @media (max-width: 768px) {
-  .article-container {
-    margin-top: 1rem;
+  html {
+    font-size: 16px;
   }
 }
 
-.article-content {
-  max-width: 768px;
-  display: block;
-  margin-top: 6rem;
-  padding: 0 1rem;
+* {
+  box-sizing: border-box;
+  transition: border-color 1.0s ease;
+  font-size: inherit;
 }
 
-.article-content h1 {
-  text-align: left;
-  font-family: 'FiraMono', sans-serif;
-  font-size: 2rem;
-  margin: 1rem 0;
-}
-
-.article-content h2 {
-  font-family: 'FiraMono', sans-serif;
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  margin-top: 2rem;
-}
-
-.article-content h3 {
-  color: var(--p2);
-  font-family: 'FiraMono', sans-serif;
-  font-size: 1.2rem;
-}
-
-.article-content h4 {
-  font-family: 'FiraMono', sans-serif;
-  font-weight: 300;
-  color: var(--p4);
-  font-size: 0.8rem;
+html, body {
+  height: 100%;
   margin: 0;
-  margin-bottom: 2rem;
-  text-align: left;
-  padding: 0.5rem 0rem;
-  border-bottom: 1px solid var(--p4);
 }
 
-.article-content p {
-  line-height: 1.5rem;
-  margin-top: 0;
-  color: var(--p3);
+html {
+  padding: 0;
 }
 
-.article-content a {
+body {
+  background-color: var(--s1);
+  transition: background-color 1.0s ease;
+  line-height: 1.4rem;
+  min-height: fit-content;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+body * {
+  font-size: 1rem;
+}
+
+.link-list {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.link-list a {
+  text-decoration: none;
+  color: var(--p2);
+  font-size: 1rem;
+  position: relative;
+}
+
+.link-list a:hover {
+  color: var(--p1);
+}
+
+.link-list a:not(:last-child)::after {
+  content: "|";
+  position: absolute;
+  right: -1rem; /* Adjust spacing */
+  color: var(--p1);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--p1);
+}
+
+p a {
   color: var(--a1);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.1s ease;
 }
 
-.article-content a:hover {
+p a:hover {
   color: var(--a2);
+}
+
+b {
+  font-weight: 500;
+}
+
+ol {
+  list-style-type: none;
+}
+
+ol li {
+  margin: 0.5rem 0;
+}
+
+ul {
+  list-style-type: "+";
+  list-style-position: outside;
+}
+
+ul li {
+  padding-left: 10px;
+}
+
+ul li::marker {
+  color: var(--p3);
+  font-weight: 200;
+}
+
+.section {
+  margin-top: 3rem;
+}
+
+.subsection a {
+  text-decoration: none;
+  color: var(--p1);
+}
+
+.work-title {
+  font-weight: 500;
+  color: var(--p1);
+}
+
+.work-title:hover {
+  color: var(--p2);
+  text-decoration: underline;
+}
+
+.date-span {
+  font-weight: 400;
+  color: var(--p1);
+  /* margin-left: 1rem; */
+}
+
+
+
+.article-header a.title {
+  font-size: 2rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--p1);
+  transition: color 0.2s ease;
+}
+
+.article-header a.title:hover {
+  color: var(--p2);
+}
+
+.article h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 3rem;
+  color: var(--p1);
+  margin: 6rem 0 0rem;  
+}
+
+.article h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  color: var(--p1);
+  margin: 2rem 0 1rem;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.1rem;
+  line-height: 1.1rem;
+}
+
+.article h4 {
+  color: var(--p2);
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin: 2rem 0 6rem;
+}
+
+.article p {
+  line-height: 1.5rem;
 }
