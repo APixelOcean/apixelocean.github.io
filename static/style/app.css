@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  background-color: var(--s2);
+  background-color: var(--a4);
   transition: background-color 1.0s ease;
   line-height: 1.4rem;
   min-height: fit-content;
@@ -70,16 +70,21 @@ main {
 }
 
 .personal {
+  background-color: var(--s2);
   width: 400px;
   padding: 1rem;
   border-right: 2px solid var(--p1);
   overflow-y: auto;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
 }
 .blocks {
   flex: 1;
   padding: 1rem 2rem;
   overflow-y: auto;
   position: relative;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 /* .blocks {
   scrollbar-width: thin;
@@ -194,6 +199,7 @@ h2 {
 }
 
 h3 {
+  color: var(--p1);
   font-weight: 700;
   font-size: 1.1rem;
   line-height: 1.1rem;

@@ -77,7 +77,7 @@
       description: 'A novel radial family tree visualization for a simulated evolutionary process of asexually-reproducing organisms.',
       img: 'assets/images/ftree.png',
       alt: 'A radial representation of a family tree',
-      style: 'background-color: var(--s2); border: 1px solid var(--p1); padding: 0.25rem;'
+      style: 'background-color: white; border: 1px solid var(--p1); padding: 0.25rem;'
     },
   ];
   projects.forEach((p, i) => {
