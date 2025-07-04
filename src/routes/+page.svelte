@@ -162,7 +162,7 @@
       {#if selection == 'collaborate'}
         <div id="collaborate" class="section">
           <p>Interested in having a conversation or working together on a project? Please send an email to defaultmonad  [at] gmail [dot] com.</p>
-          <p>I enjoy most things, including talking, doing scientific research, and developing creative ideas.</p>
+          <p>I enjoy most things, and try to have time for them.</p>
         </div>
       {/if}
 
@@ -172,7 +172,7 @@
     <div class="blocks">
 
       <div id="projects" class="section">
-        <h3 class="section-title">projects</h3>
+        <!-- <h3 class="section-title">projects</h3> -->
         <div class="project-grid">
           {#each projects.slice().reverse() as project (project.id)}
             <Project {project} />
