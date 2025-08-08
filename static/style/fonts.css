@@ -258,6 +258,21 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/assets/fonts/IBM_Plex_Sans/IBMPlexSans-VariableFont_wdth,wght.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 100 700;
+  /* font-stretch: 75% 100%; */
+}
+@font-face {
+  font-family: 'IBMPlexSans';
+  src: url('/assets/fonts/IBM_Plex_Sans/IBMPlexSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 100 700;
+  /* font-stretch: 75% 100%; */
+}
+
 /* @font-face {
   font-family: 'OpenSans';
   src: url('fonts/OpenSans-Bold.woff2') format('woff2'),

@@ -1,0 +1,127 @@
+@import url('./fonts.css');
+
+:root {
+  --content-width: 1240px;
+  --side-padding: 20px;
+  --header-height: 4rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-size: inherit;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 18px;
+}
+
+.writing-container {
+  height: 100vh;
+  padding-top: var(--header-height);
+  overflow-y: auto;
+  background-color: var(--s3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.writing-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: var(--s3);
+  height: var(--header-height);
+  border-bottom: 2px solid var(--s2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.writing-header.hidden {
+  transform: translateY(-100%);
+}
+
+.writing-header a.title {
+  color: var(--p1);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.writing-content {
+  max-width: 728px;
+  padding: 1rem;
+  margin: 0;
+  font-family: 'IBMPlexSans', sans-serif;
+  font-size: 21px;
+}
+@media (max-width: 728px) {
+  .writing-content {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+
+.writing-content * {
+  font-family: 'IBMPlexSans', sans-serif;
+  font-size: inherit;
+  line-height: 1.6;
+}
+.writing-content em {
+  font-weight: unset;
+  font-style: italic;
+}
+
+.writing-content h1 {
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--p2);
+  font-style: normal;
+  margin-bottom: 0;
+  margin-top: 0.5em;
+}
+@media (max-width: 728px) {
+  .writing-content h1 {
+    margin-top: 0;
+  }
+}
+
+.writing-content h2 {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+.writing-content h4 {
+  font-weight: 400;
+  color: var(--p3);
+  font-style: normal;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+.writing-content h5 {
+  font-weight: 300;
+  font-size: 0.8em;
+  color: var(--p3);
+  font-style: normal;
+  margin-top: 0;
+  padding-bottom: 1em;
+  margin-bottom: 1.5em;
+  border-bottom: 1px solid var(--s4);
+}
+
+.writing-content p {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.writing-content a {
+  color: var(--a1);
+  text-decoration: underline;
+}

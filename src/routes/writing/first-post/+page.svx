@@ -1,0 +1,24 @@
+---
+title: My First Post
+description: What does it mean to post?
+author: Chase
+date: August 8th, 2025
+---
+
+# { title }
+#### { description }
+##### {author} | {date}
+
+## Why post?
+
+If anything, this post is mostly just to edit the style of the website. But, if you're reading this, I suppose it's also for you. Someone who clicked on this post without really any promise of content. I plan to post about things I'm thinking about, things that interest me, generally things in the realm of mathematics and culture. I will try to avoid trendy topics like AI and whatever, since there are enough people writing about those things.
+
+## Who is your audience?
+
+Well, I'm not entirely sure. I'm starting off by writing this closer to a diary than anything else.
+
+## What's next?
+
+I had a few ideas, but most entirely forgot them. That's alright. Whatever.
+
+
