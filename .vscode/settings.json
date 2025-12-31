@@ -1,0 +1,9 @@
+{
+  "files.associations": {
+    "*.svx": "mdsvex"
+  },
+  "[mdsvex]": {
+    "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 80
+  }
+}

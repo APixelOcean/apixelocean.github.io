@@ -1,0 +1,121 @@
+---
+title: Radial Family Tree
+date: Spring 2025
+---
+
+<script>
+  import radialTree from './images/radial_ftree_flight.png';
+  import radialTreeRainbow from './images/radial_ftree_1.png';
+  import radialTreeMiles from './images/radial_ftree_fmiles.png';
+  import dendrogram from './images/dendrogram.png';
+  import miles from './images/scaled_in_miles.png';
+  import shield from './images/botw_shield.png';
+  import goldmask from './images/goldmask.png';
+</script>
+
+# { title }
+#### {date}
+
+<figure class="figure">
+  <img
+    class="subpage-img"
+    src={radialTree}
+    alt="Radial evolutionary tree visualization"
+    width="80%"
+  />
+  <figcaption>
+    Radial evolutionary tree illustrating lineage divergence over time.
+  </figcaption>
+</figure>
+
+In collaboration with <a href="https://kempnerinstitute.harvard.edu/people/our-people/aaron-walsman/" target="_blank">Aaron Walsman</a> while working on DIRT, an evolutionary simulation with a bunch of replicating agents ("bugs"), we became interested in visualizing short-term family trajectories. Is there one individual that has a ton of children, is everyone alive having just a couple children, or is it somewhere in between? With standard evolutionary tree visualizations, such as dendrograms, we lacked the level of detail needed to really see what was going on. As soon as we got to 30 or so total indviduals, the uneven distribution of children led to visual clumping and loss of interpretability.
+
+<figure class="figure">
+  <img
+    class="subpage-img"
+    src={dendrogram}
+    alt="An example evolutionary dendrogram of fish. This one is easy to read because there are relatively few lineages."
+    width="100%"
+  />
+  <figcaption>
+    An example evolutionary dendrogram of fish. This one is easy to read because there are relatively few lineages.
+  </figcaption>
+</figure>
+
+The big difference in our visualization is that we were representing <em>individuals</em>, not lineages. We start with a small number of founders, which replicate over time and increase the total population size. This means we have only a little visual information at the start of the simulation, and get progressively more as the simulation progresses. Dendrograms live in rectangular space, such that their information density limit is the same at any time step. A circle, on the other hand, begins at the center with low visual resolution and increases in visual capacity as you move outwards, roughly proportional to the radius. There are a number of radial evolutionary trees, although my representation is slightly different because it visualizes individuals.
+
+<figure class="figure">
+  <img
+    class="subpage-img"
+    src={radialTreeRainbow}
+    alt="The first interation of the radial family tree."
+    width="80%"
+  />
+  <figcaption>
+    The first interation of the radial family tree.
+  </figcaption>
+</figure>
+
+I colored each lineage per founder, which I thought was interesting but a little busy. In addition, it was totally unclear when bugs were dying or replicating. The idea is that each bug's life follows a line segment moving out of the circle, where branches that form off of a segment are the children. I added some dots to show bug deaths, and I think this made the replication more clear as well. I also started the founders a little bit outside the center of the circle, to induce some visual separation.
+
+<figure class="figure">
+  <div class="figure-row">
+    <img
+      class="subpage-img"
+      src={radialTree}
+      alt="First iteration of the radial family tree"
+    />
+    <img
+      class="subpage-img"
+      src={radialTreeMiles}
+      alt="Second iteration of the radial family tree"
+    />
+  </div>
+
+  <figcaption>
+    Final drafts of the radial family tree.
+  </figcaption>
+</figure>
+
+
+Now, I've ended up with something that looks alright, although it isn't totally clear to read. Still, it was fun to make and I enjoy the visual identity.
+
+When coming up with the idea, I had a few loose inspirations in mind.
+
+<figure class="figure">
+  <img
+    class="subpage-img"
+    src={miles}
+    alt="Rolling up Fathom's Scaled in Miles poster."
+    width="80%"
+  />
+  <figcaption>
+    A wonderful <a href="https://www.fathom.info/miles/" target="_blank">record-inspired visualization of Miles Davis's work</a> created by the incredible designers at Fathom Information Design (Mark, James, and Ben).
+  </figcaption>
+</figure>
+
+You can see one of my final drafts drew heavily from the color scheme of Fathom's work.
+
+<figure class="figure">
+  <div class="figure-row">
+    <img
+      class="subpage-img"
+      src={goldmask}
+      alt="Character Goldmask from Elden Ring."
+    />
+   
+    <img
+      class="subpage-img"
+      src={shield}
+      alt="A guardian shield from BOTW."
+      width="40%"
+    />
+  </div>
+  <figcaption>
+    Left: the enigmatic Goldmask from Elden Ring.<br>Right: a Guardian Shield from The Legend of Zelda: Breath of the Wild.
+  </figcaption>
+</figure>
+
+Remember, I said <em>loose</em> inspirations. I tend to connect visual designs to video games, most of the time, because video games are pretty fun and visually distinct from other forms of media.
+
+The code for this is available <a href="https://editor.p5js.org/defaultmonad/sketches/OIxrA7oHv" target="_blank">here</a>. The data processing was done in Python, and the code itself is written in JavaScript with p5.js.

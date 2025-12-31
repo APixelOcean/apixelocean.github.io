@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  background-color: rgb(254, 250, 248); /* gb(248, 249, 250) rgb(252, 245, 233) */
+  background-color: rgb(255, 255, 255); /* gb(248, 249, 250) rgb(252, 245, 233) */
   transition: background-color 1.0s ease;
   line-height: 1.4rem;
   width: 100%;

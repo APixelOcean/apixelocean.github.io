@@ -1,5 +1,5 @@
 <script>
-  import PortfolioItem from './PortfolioItem.svelte';
+  import PortfolioItem from '../components/PortfolioItem.svelte';
   const links = [
     { name: 'home', url: '/' },
     { name: 'about', url: '/about' },
