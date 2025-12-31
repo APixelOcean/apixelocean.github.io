@@ -33,6 +33,25 @@
     },
   ];
 
+  const projects = [
+    {
+      title: 'Lookout',
+      team: 'Fathom Information Design',
+      desc: 'Lightweight pathogen surveillance software designed for public health officials across the world.',
+      img: '/assets/images/lo1.png',
+      link: 'https://sl.sentinel.network/outbreak/',
+      alt: 'lookout pathogen surveillance software'
+    },
+    {
+      title: 'Rowboat',
+      team: 'Fathom Information Design',
+      desc: 'A lightning fast tool for understanding large datasets.',
+      img: '/assets/images/rb1.png',
+      link: 'https://rowboat.net/',
+      alt: 'rowboat spreadsheet visualization software'
+    }
+  ];
+
   const portfolioItems = [
     {
       title: 'Radial Family Tree',
@@ -74,7 +93,32 @@
   </nav>
   <p class="sutext">I am a mathematical biologist and computer scientist studying cultural evolution with Prof. Marc Feldman at Stanford.</p>
   <p class="sutext">Evolution is a physical process that has created the diversity of the natural world, forming entities that become progressively more efficient at using information over time. I believe understanding this process can help us 1) design social policies that account for population resource and information dynamics and 2) develop objective-free learning algorithms to create new forms of computational intelligence.</p>
-  
+  <div class="affiliations">
+    <span class="bold">Current Affiliations:</span>
+    <ul>
+      <li>Department of Biology, Stanford</li>
+      <li>Kempner Institute, Harvard</li>
+    </ul>
+  </div>
+
+  <div class="content about" id="projects">
+    <div class="portfolio-section">
+      <div class="portfolio-section-header">team projects</div>
+      <div class="portfolio-items">
+        {#each projects as item}
+          <PortfolioItem
+            title={item.title}
+            team={item.team}
+            desc={item.desc}
+            img={item.img}
+            alt={item.alt}
+            link={item.link || ''}
+          />
+        {/each}
+      </div>
+    </div>
+  </div>
+
   <div class="content about" id="artifacts">
     <div class="portfolio-section">
       <div class="portfolio-section-header">artifacts</div>
